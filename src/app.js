@@ -5,7 +5,7 @@ const cors = require("cors");
 const { NODE_ENV } = require("./config");
 const helmet = require("helmet");
 const uuid = require("uuid/v4");
-const bookmarkRouter = require("./bookmark/bookmark-router");
+const bookmarkRouter = require("./bookmarks/bookmark-router");
 
 const app = express();
 const morganOption = NODE_ENV === "production" ? "tiny" : "common";
